@@ -1,10 +1,10 @@
 pipeline{
     agent any
-    tools {nodejs "Node16"}
+    tools {nodejs "Node"}
     stages {
         stage('Clone Repository'){
             steps{
-                git branch: 'main',
+                git branch: 'master',
                     url: 'https://github.com/srikprasad/node_jenkins_pipeline.git'
             }
         }
