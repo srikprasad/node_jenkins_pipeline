@@ -3,7 +3,7 @@ const port = process.env.port || 3003;
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send('Hello from Jenkins pipeline!! ');
+    res.send('Hello Jenkins pipeline!! ');
 });
 
 app.listen(port, () => { console.log('My App Is Up And Running!'); });
